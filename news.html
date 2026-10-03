@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tin Tức Công Nghệ & Phân Tích Chuyên Sâu - TechVanguard</title>
+  <meta name="description" content="Trung tâm tin tức công nghệ cập nhật liên tục: Trí tuệ nhân tạo, thiết bị vi xử lý lượng tử, phòng thủ an ninh mạng và kỹ thuật phần mềm tiên tiến.">
+  <meta name="keywords" content="tin tức công nghệ, tin AI, chip lượng tử, an ninh mạng, tin tức techvanguard">
+  <meta name="author" content="TechVanguard">
+  <link rel="canonical" href="news.html">
+
+  <!-- OpenGraph / Social Metadata -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Tin Tức Công Nghệ & Phân Tích Chuyên Sâu - TechVanguard">
+  <meta property="og:description" content="Đọc ngay những bài phân tích và đánh giá công nghệ mới nhất từ các chuyên gia.">
+  <meta property="og:image" content="assets/images/news-ai.jpg">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress-bar" id="readingProgressBar" aria-hidden="true"></div>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#newsMainContent" class="skip-to-content">Bỏ qua đến nội dung tin tức</a>
+
+  <!-- Top Breaking News Ticker -->
+  <div class="ticker-bar" aria-label="Tin mới cập nhật">
+    <div class="container">
+      <div class="ticker-inner">
+        <span class="ticker-badge">
+          <span class="ticker-pulse"></span>
+          CẬP NHẬT 24/7
+        </span>
+        <div class="ticker-track">
+          <div class="ticker-content">
+            <span class="ticker-item">🔥 <strong>Hội nghị Thượng đỉnh AI Toàn Cầu 2026</strong> chính thức công bố chuẩn an toàn mới cho các Agent tự trị.</span>
+            <span class="ticker-item">💡 <strong>Kiến trúc Chip 2nm</strong> bắt đầu được sản xuất thương mại hàng loạt từ quý 4.</span>
+            <span class="ticker-item">🚀 <strong>Khởi nghiệp DeepTech Việt Nam</strong> gọi vốn thành công 35 triệu USD phát triển thị giác máy tính công nghiệp.</span>
+            <span class="ticker-item">⚡ <strong>Mạng 6G thử nghiệm</strong> đạt tốc độ truyền dữ liệu 100 Gbps trong môi trường đô thị.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="nav-wrapper">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" id="newsBrandLogo" aria-label="Trang chủ TechVanguard">
+          <div class="brand-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <span>Tech<span class="brand-text">Vanguard</span></span>
+          <span class="brand-badge">2026</span>
+        </a>
+
+        <!-- Main Navigation Links -->
+        <nav class="nav-menu" id="navMenu" aria-label="Điều hướng chính">
+          <a href="index.html" class="nav-link">Trang chủ</a>
+          <a href="news.html" class="nav-link active">Tin tức</a>
+          <a href="news.html?cat=ai" class="nav-link">Trí tuệ nhân tạo</a>
+          <a href="news.html?cat=hardware" class="nav-link">Phần cứng</a>
+          <a href="news.html?cat=cyber" class="nav-link">Bảo mật</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="nav-actions">
+          <!-- Theme Switcher -->
+          <button class="theme-toggle" id="themeToggleBtn" aria-label="Chuyển đổi giao diện sáng/tối" title="Chuyển đổi giao diện">
+            <!-- Moon icon for dark theme -->
+            <svg class="theme-icon-dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <!-- Sun icon for light theme -->
+            <svg class="theme-icon-light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <!-- Back to Home Button -->
+          <a href="index.html" class="btn-secondary" id="btnBackHome">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Trang chủ</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Mở menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- News Page Main Content -->
+  <main id="newsMainContent">
+    <!-- News Hero & Search Header -->
+    <section class="news-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Đường dẫn trang">
+          <a href="index.html">Trang chủ</a>
+          <span>/</span>
+          <span style="color: var(--color-cyan); font-weight: 600;">Tin tức & Phân tích</span>
+        </nav>
+        <h1 class="section-title" style="font-size: 2.75rem; margin-bottom: 0.75rem;">
+          Trung Tâm <span class="text-gradient">Tin Tức Công Nghệ</span>
+        </h1>
+        <p class="section-subtitle" style="font-size: 1.05rem; max-width: 620px; margin: 0 auto;">
+          Nơi hội tụ thông tin đa chiều, phân tích chuyên môn về trí tuệ nhân tạo, an toàn thông tin và kỷ nguyên điện toán tiếp theo.
+        </p>
+
+        <!-- Live Search Box -->
+        <div class="news-search-bar">
+          <div class="search-input-wrapper">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" style="margin-right: 0.5rem;">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="newsSearchInput" class="search-input" placeholder="Tìm kiếm bài viết theo từ khóa (AI, Chip, An ninh, Lập trình...)..." aria-label="Tìm kiếm tin tức">
+            <button type="button" class="search-btn" id="btnFilterSearch">Tìm kiếm</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Content Section with Two Columns -->
+    <section class="container">
+      <div class="news-layout">
+        <!-- Main Column (Filter Tabs + Articles) -->
+        <div class="news-main-col">
+          <!-- Interactive Category Tabs -->
+          <div class="news-filter-tabs" role="tablist" aria-label="Lọc theo chuyên mục">
+            <button class="filter-tab active" data-category="all" role="tab" aria-selected="true">
+              Tất cả (6)
+            </button>
+            <button class="filter-tab" data-category="ai" role="tab" aria-selected="false">
+              🤖 Trí tuệ nhân tạo (2)
+            </button>
+            <button class="filter-tab" data-category="hardware" role="tab" aria-selected="false">
+              💡 Phần cứng & Chip (1)
+            </button>
+            <button class="filter-tab" data-category="cyber" role="tab" aria-selected="false">
+              🛡️ An ninh mạng (2)
+            </button>
+            <button class="filter-tab" data-category="dev" role="tab" aria-selected="false">
+              💻 Lập trình & Dev (1)
+            </button>
+          </div>
+
+          <!-- Dynamic Articles Grid -->
+          <div class="article-grid" id="newsArticleGrid">
+            <!-- Article 1: AI Agent -->
+            <article class="article-card" data-category="ai">
+              <div class="article-thumb-wrapper">
+                <img src="assets/images/news-ai.jpg" alt="Robot hình người và tác nhân trí tuệ nhân tạo tự trị" class="article-thumb" loading="lazy">
+                <span class="article-category-badge badge-ai">Trí tuệ nhân tạo</span>
+                <button class="bookmark-btn" aria-label="Lưu bài viết" title="Lưu bài">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="article-body">
+                <div class="article-meta">
+                  <span>03/10/2026</span>
+                  <span class="article-meta-divider"></span>
+                  <span>7 phút đọc</span>
+                </div>
+                <h2 class="article-title">AI Agent Thế Hệ Mới: Khả Năng Lập Kế Hoạch Đa Bước Và Tự Sửa Lỗi</h2>
+                <p class="article-excerpt">
+                  Không còn dừng lại ở việc phản hồi hội thoại thông thường, các mô hình Agentic AI hiện nay có thể tự phân rã mục tiêu phức tạp, tương tác với trình duyệt và tự động sửa mã nguồn trong môi trường sandbox.
+                </p>
+                <div class="article-footer">
+                  <div class="author-chip">
+                    <div class="author-avatar">TM</div>
+                    <span class="author-name">Trần Minh</span>
+                  </div>
+                  <a href="#" class="read-more-link">
+                    <span>Đọc tiếp</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 2: Hardware Quantum Chip -->
+            <article class="article-card" data-category="hardware">
+              <div class="article-thumb-wrapper">
+                <img src="assets/images/news-quantum.jpg" alt="Vi xử lý lượng tử và mạch quang học tiên tiến" class="article-thumb" loading="lazy">
+                <span class="article-category-badge badge-hardware">Phần cứng</span>
+                <button class="bookmark-btn" aria-label="Lưu bài viết" title="Lưu bài">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="article-body">
+                <div class="article-meta">
+                  <span>02/10/2026</span>
+                  <span class="article-meta-divider"></span>
+                  <span>9 phút đọc</span>
+                </div>
+                <h2 class="article-title">Đột Phá Bán Dẫn: Vi Xử Lý Tích Hợp Quang Học (Silicon Photonics)</h2>
+                <p class="article-excerpt">
+                  Bằng cách sử dụng các chùm photon thay cho electron để truyền dẫn dữ liệu giữa các lõi tính toán, các vi mạch mới đạt băng thông truyền dữ liệu terabit trên giây với lượng nhiệt tỏa ra gần như bằng không.
+                </p>
+                <div class="article-footer">
+                  <div class="author-chip">
+                    <div class="author-avatar">DH</div>
+                    <span class="author-name">Đặng Huy</span>
+                  </div>
+                  <a href="#" class="read-more-link">
+                    <span>Đọc tiếp</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 3: Cybersecurity -->
+            <article class="article-card" data-category="cyber">
+              <div class="article-thumb-wrapper">
+                <img src="assets/images/news-cyber.jpg" alt="Lá chắn phòng thủ mạng dữ liệu" class="article-thumb" loading="lazy">
+                <span class="article-category-badge badge-cyber">Bảo mật</span>
+                <button class="bookmark-btn" aria-label="Lưu bài viết" title="Lưu bài">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="article-body">
+                <div class="article-meta">
+                  <span>02/10/2026</span>
+                  <span class="article-meta-divider"></span>
+                  <span>6 phút đọc</span>
+                </div>
+                <h2 class="article-title">Chiến Tuyến An Ninh Số: Cuộc Đua Giữa Mã Hóa Hậu Lượng Tử (PQC) & Hacker</h2>
+                <p class="article-excerpt">
+                  Các tiêu chuẩn mã hóa SHA và RSA truyền thống đang dần được thay thế bởi các thuật toán mạng tinh thể (Lattice-based cryptography) để bảo vệ hạ tầng tài chính toàn cầu trước sức mạnh của máy tính lượng tử.
+                </p>
+                <div class="article-footer">
+                  <div class="author-chip">
+                    <div class="author-avatar">VT</div>
+                    <span class="author-name">Vũ Tuấn</span>
+                  </div>
+                  <a href="#" class="read-more-link">
+                    <span>Đọc tiếp</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 4: AI in Enterprise -->
+            <article class="article-card" data-category="ai">
+              <div class="article-thumb-wrapper">
+                <img src="assets/images/hero.jpg" alt="Mạng lưới điện toán đám mây và trí tuệ doanh nghiệp" class="article-thumb" loading="lazy">
+                <span class="article-category-badge badge-ai">Trí tuệ nhân tạo</span>
+                <button class="bookmark-btn" aria-label="Lưu bài viết" title="Lưu bài">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="article-body">
+                <div class="article-meta">
+                  <span>01/10/2026</span>
+                  <span class="article-meta-divider"></span>
+                  <span>5 phút đọc</span>
+                </div>
+                <h2 class="article-title">Triển Khai LLM Cục Bộ (On-Premise): Bảo Đảm Dữ Liệu Tuyệt Mật Cho Doanh Nghiệp</h2>
+                <p class="article-excerpt">
+                  Giải pháp tối ưu hóa trọng số lượng tử hóa 4-bit (AWQ) cho phép doanh nghiệp vận hành mô hình ngôn ngữ 70 tỷ tham số ngay trên các cụm máy chủ nội bộ mà không cần đưa dữ liệu lên đám mây công cộng.
+                </p>
+                <div class="article-footer">
+                  <div class="author-chip">
+                    <div class="author-avatar">HN</div>
+                    <span class="author-name">Hải Nam</span>
+                  </div>
+                  <a href="#" class="read-more-link">
+                    <span>Đọc tiếp</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 5: Web & Dev -->
+            <article class="article-card" data-category="dev">
+              <div class="article-thumb-wrapper">
+                <img src="assets/images/hero.jpg" alt="Mã nguồn và giao diện lập trình web hiện đại" class="article-thumb" loading="lazy">
+                <span class="article-category-badge badge-dev">Lập trình & Dev</span>
+                <button class="bookmark-btn" aria-label="Lưu bài viết" title="Lưu bài">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="article-body">
+                <div class="article-meta">
+                  <span>30/09/2026</span>
+                  <span class="article-meta-divider"></span>
+                  <span>8 phút đọc</span>
+                </div>
+                <h2 class="article-title">WebAssembly & WebGPU: Khi Trình Duyệt Trở Thành Hệ Điều Hành Hiệu Năng Cao</h2>
+                <p class="article-excerpt">
+                  Nhờ khả năng truy cập trực tiếp vào nhân GPU thông qua WebGPU và tốc độ thực thi gần sát kim loại của WASM, các phần mềm đồ họa 3D và mô hình học máy hiện có thể chạy mượt mà ngay trên tab trình duyệt.
+                </p>
+                <div class="article-footer">
+                  <div class="author-chip">
+                    <div class="author-avatar">QL</div>
+                    <span class="author-name">Quốc Long</span>
+                  </div>
+                  <a href="#" class="read-more-link">
+                    <span>Đọc tiếp</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 6: Ransomware & Defense -->
+            <article class="article-card" data-category="cyber">
+              <div class="article-thumb-wrapper">
+                <img src="assets/images/news-cyber.jpg" alt="Mô hình phát hiện mã độc tự động" class="article-thumb" loading="lazy">
+                <span class="article-category-badge badge-cyber">Bảo mật</span>
+                <button class="bookmark-btn" aria-label="Lưu bài viết" title="Lưu bài">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="article-body">
+                <div class="article-meta">
+                  <span>29/09/2026</span>
+                  <span class="article-meta-divider"></span>
+                  <span>4 phút đọc</span>
+                </div>
+                <h2 class="article-title">Bảo Vệ Hạ Tầng Đám Mây: Ngăn Chặn Cuộc Tấn Công Chuỗi Cung Ứng Mã Nguồn Mở</h2>
+                <p class="article-excerpt">
+                  Hướng dẫn chi tiết về cách xây dựng quy trình kiểm tra chữ ký số tự động (SLSA) và phân tích hành vi gói thư viện nhằm loại bỏ các cửa sau (backdoor) nguy hiểm.
+                </p>
+                <div class="article-footer">
+                  <div class="author-chip">
+                    <div class="author-avatar">VT</div>
+                    <span class="author-name">Vũ Tuấn</span>
+                  </div>
+                  <a href="#" class="read-more-link">
+                    <span>Đọc tiếp</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Load More Button -->
+          <div class="load-more-container">
+            <button class="btn-secondary" id="loadMoreNewsBtn" style="padding: 0.8rem 2.2rem;">
+              <span>Tải thêm bài viết</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Sidebar Column -->
+        <aside class="news-sidebar" aria-label="Nội dung phụ & thăm dò ý kiến">
+          <!-- Widget: Trending Top 5 -->
+          <div class="sidebar-widget">
+            <h3 class="widget-title">
+              <span style="color: var(--color-cyan);">🔥</span>
+              Đọc Nhiều Nhất Tuần
+            </h3>
+            <div class="trending-list">
+              <div class="trending-item">
+                <span class="trending-rank">01</span>
+                <div class="trending-info">
+                  <h4><a href="#">So sánh kiến trúc GPU Blackwell thế hệ mới và vi mạch ASIC</a></h4>
+                  <span class="trending-meta">45.2K lượt đọc • 120 bình luận</span>
+                </div>
+              </div>
+              <div class="trending-item">
+                <span class="trending-rank">02</span>
+                <div class="trending-info">
+                  <h4><a href="#">Cách cấu hình mô hình DeepSeek R1 chạy mượt trên MacBook M3</a></h4>
+                  <span class="trending-meta">38.9K lượt đọc • 95 bình luận</span>
+                </div>
+              </div>
+              <div class="trending-item">
+                <span class="trending-rank">03</span>
+                <div class="trending-info">
+                  <h4><a href="#">Phân tích vụ rò rỉ dữ liệu vệ tinh Starlink và bài học bảo mật</a></h4>
+                  <span class="trending-meta">31.4K lượt đọc • 68 bình luận</span>
+                </div>
+              </div>
+              <div class="trending-item">
+                <span class="trending-rank">04</span>
+                <div class="trending-info">
+                  <h4><a href="#">Tại sao Rust tiếp tục thống trị trong lập trình hạ tầng hệ thống?</a></h4>
+                  <span class="trending-meta">27.6K lượt đọc • 84 bình luận</span>
+                </div>
+              </div>
+              <div class="trending-item">
+                <span class="trending-rank">05</span>
+                <div class="trending-info">
+                  <h4><a href="#">Tổng quan thị trường khởi nghiệp bán dẫn Đông Nam Á 2026</a></h4>
+                  <span class="trending-meta">22.1K lượt đọc • 42 bình luận</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Widget: Reader Poll -->
+          <div class="sidebar-widget">
+            <h3 class="widget-title">
+              <span style="color: var(--color-rose);">📊</span>
+              Thăm Dò Ý Kiến Độc Giả
+            </h3>
+            <p class="poll-question">Theo bạn, công nghệ nào sẽ tạo đột phá kinh tế lớn nhất năm 2026?</p>
+            <div class="poll-options-wrapper" id="pollOptionsList">
+              <button class="poll-option" data-pct="48">
+                <div class="poll-fill"></div>
+                <div class="poll-text-wrapper">
+                  <span>Tác nhân AI tự chủ (AI Agents)</span>
+                  <span class="poll-pct">48%</span>
+                </div>
+              </button>
+              <button class="poll-option" data-pct="26">
+                <div class="poll-fill"></div>
+                <div class="poll-text-wrapper">
+                  <span>Robot hình người công nghiệp</span>
+                  <span class="poll-pct">26%</span>
+                </div>
+              </button>
+              <button class="poll-option" data-pct="16">
+                <div class="poll-fill"></div>
+                <div class="poll-text-wrapper">
+                  <span>Điện toán vi xử lý lượng tử</span>
+                  <span class="poll-pct">16%</span>
+                </div>
+              </button>
+              <button class="poll-option" data-pct="10">
+                <div class="poll-fill"></div>
+                <div class="poll-text-wrapper">
+                  <span>Năng lượng phản ứng nhiệt hạch số</span>
+                  <span class="poll-pct">10%</span>
+                </div>
+              </button>
+            </div>
+            <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.75rem;">
+              * Nhấp vào một phương án để gửi bình chọn của bạn ngay lập tức.
+            </p>
+          </div>
+
+          <!-- Widget: Popular Tags -->
+          <div class="sidebar-widget">
+            <h3 class="widget-title">
+              <span style="color: var(--color-primary-light);">🏷️</span>
+              Chủ Đề Nổi Bật
+            </h3>
+            <div class="tags-cloud">
+              <a href="#" class="tag-badge">#AgenticAI</a>
+              <a href="#" class="tag-badge">#QuantumChip</a>
+              <a href="#" class="tag-badge">#ZeroTrust</a>
+              <a href="#" class="tag-badge">#RustLang</a>
+              <a href="#" class="tag-badge">#SiliconPhotonics</a>
+              <a href="#" class="tag-badge">#WebGPU</a>
+              <a href="#" class="tag-badge">#AutonomousRobots</a>
+              <a href="#" class="tag-badge">#CyberDefense</a>
+              <a href="#" class="tag-badge">#DeepTech</a>
+            </div>
+          </div>
+
+          <!-- Widget: Weekly Tech Digest Mini -->
+          <div class="sidebar-widget" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(14, 20, 36, 0.8) 100%); border-color: rgba(99, 102, 241, 0.3);">
+            <h3 class="widget-title" style="color: var(--color-primary-light);">
+              <span>📬</span> Bản Tin Tech Chuyên Sâu
+            </h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
+              Hơn 50,000 kỹ sư và nhà quản trị công nghệ nhận tóm tắt tuần của chúng tôi.
+            </p>
+            <form class="newsletter-form" id="sidebarNewsletterForm" style="flex-direction: column; align-items: stretch; gap: 0.6rem;">
+              <input type="email" class="newsletter-input" placeholder="Nhập email của bạn..." required style="min-width: 100%;">
+              <button type="submit" class="btn-primary" style="width: 100%;">
+                <span>Đăng ký nhanh</span>
+              </button>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <span>Tech<span class="brand-text">Vanguard</span></span>
+          </a>
+          <p>
+            Cổng thông tin độc lập về khoa học công nghệ, trí tuệ nhân tạo, thiết bị phần cứng thế hệ mới và an ninh số toàn cầu.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Chuyên Mục</h4>
+          <div class="footer-links">
+            <a href="news.html?cat=ai">Trí Tuệ Nhân Tạo (AI)</a>
+            <a href="news.html?cat=hardware">Phần Cứng & Vi Mạch</a>
+            <a href="news.html?cat=cyber">An Ninh Mạng & Zero-Trust</a>
+            <a href="news.html?cat=dev">Kỹ Thuật Lập Trình</a>
+            <a href="news.html">Khởi Nghiệp Công Nghệ</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Về Chúng Tôi</h4>
+          <div class="footer-links">
+            <a href="#">Giới thiệu tòa soạn</a>
+            <a href="#">Đội ngũ chuyên gia</a>
+            <a href="#">Chính sách nội dung</a>
+            <a href="#">Hợp tác xuất bản</a>
+            <a href="#">Liên hệ truyền thông</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Pháp Lý & Điều Khoản</h4>
+          <div class="footer-links">
+            <a href="#">Điều khoản sử dụng</a>
+            <a href="#">Chính sách quyền riêng tư</a>
+            <a href="#">Bản quyền bài viết</a>
+            <a href="#">Cài đặt cookie</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 TechVanguard Media. Tất cả các quyền được bảo lưu.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Theo dõi trên Twitter / X">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Theo dõi trên GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Theo dõi trên LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Lên đầu trang" title="Về đầu trang">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Main JavaScript Logic -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
